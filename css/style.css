@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(57, 41, 61);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.block {
+    width: 400px;
+   margin: 0 auto;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input {
+    padding: 5px;
+    display: block;
+    min-height: 20px;
+    min-width: 200px;
+    text-align: center;
+    margin: 8px auto;
+}
+
+
+.btn {
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+    min-height: 40px;
+    padding: 0px 50px;
+    background-color: #f15525;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #9d2b09;
+    transition: all .3s;
+    border-radius: 82px;
+}
+
+.btn:active {
+    background-color: rgb(5, 28, 133);
+    box-shadow: 0 5px 0 #010e20;
+    color: #fff;
+}
+
+input {
+    /* appearance: none; */
+    box-sizing: border-box;
+}
+
+input:valid {
+    background-color: #fff;
+}
+
+/* The styles are for invalid forms */
+/* input:checked:invalid {
+    border-color: #900;
+    background-color: #FDD;
+} */
+
+input:focus:invalid {
+    outline: none;
+}
+
+/* The styles are for errors */
+
+.error {
+    width: 100%;
+    padding: 0;
+    min-height: 20px;
+    font-size: 80%;
+    color: #fff;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+.mess {
+    /* display: block; */
+    width: 100%;
+    padding: 0;
+    min-height: 20px;
+    font-size: 80%;
+    color: #fff;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+}
+.mess:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}

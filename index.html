@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="container">
+        <div class="block">
+            <div class="texts">
+                <h1>Form validation</h1>
+            </div>
+
+
+            <form action="" id="form" novalidate>
+                <p>
+                    <label for="name">
+                        <span>Please, write down your Name:</span>
+                        <input type="name" id="name" name="name" class="input" placeholder="Name">
+                        <span class="error-name" aria-live="polite"></span>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="mail">
+                        <span>Please, write down your E-mail:</span>
+                        <input type="email" id="mail" name="mail" class="input" required placeholder="E-mail">
+                        <span class="error-email" aria-live="polite"></span>
+                    </label>
+                </p>
+          
+                <p>
+                    <label for="phone">
+                        <span>Please, write down your Phone Number:</span>
+                        <input type="tel" id="phone" name="phone" class="input" pattern="[0-9]{3}" required placeholder="Phone number">
+                        <span class="error-phone" aria-live="polite"></span>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="password">
+                        <span>Please, create a Password:</span>
+                        <input type="password" id="password" name="password" class="input" minlength="6" required placeholder="Password">
+                        <span class="error-password" aria-live="polite"></span>
+                        <!-- <span class="mess length error-password" aria-live="polite"></span>
+                        <span class="mess tooShort error-password" aria-live="polite"></span>
+                        <span class="mess symbol error-password" aria-live="polite"></spans> -->
+                    </label>
+                </p>
+              
+            
+                <button class="btn">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
